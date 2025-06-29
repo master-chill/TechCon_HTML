@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register for TechCon 2024</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Register for TechCon 2024</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section>
+      <h2>Registration Form</h2>
+      <form action="submit_registration.html" method="post">
+        
+        <label for="fullname">Full Name:</label><br />
+        <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+        <label for="email">Email Address:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="organization">Organization:</label><br />
+        <input type="text" id="organization" name="organization" /><br /><br />
+
+        <label for="role">Your Role:</label><br />
+        <select id="role" name="role" required>
+          <option value="">-- Select your role --</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select><br /><br />
+
+        <label for="days">Which days will you attend?</label><br />
+        <input type="checkbox" id="day1" name="days" value="day1" />
+        <label for="day1">Day 1</label><br />
+        <input type="checkbox" id="day2" name="days" value="day2" />
+        <label for="day2">Day 2</label><br />
+        <input type="checkbox" id="day3" name="days" value="day3" />
+        <label for="day3">Day 3</label><br /><br />
+
+        <label for="comments">Additional Comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Let us know anything special..."></textarea><br /><br />
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 TechCon Conference. All rights reserved. <strong>Copyright</strong>.</p>
+  </footer>
+
+</body>
+</html>
